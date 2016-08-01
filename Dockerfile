@@ -9,6 +9,7 @@ RUN unzip $VOLDEMORT_VERSION.zip && mv voldemort-* voldemort
 WORKDIR /voldemort/
 
 ENV VOLDEMORT_HOME /voldemort/config/single_node_cluster
+ADD chronos-store.xml /voldemort/config/single_node_cluster/config/STORES/
 RUN ./gradlew clean build -x test
 
 EXPOSE 6666 6667 8081
