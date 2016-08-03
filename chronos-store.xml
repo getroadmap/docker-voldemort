@@ -13,8 +13,5 @@
     <value-serializer>
         <type>string</type>
         <schema-info>utf8</schema-info>
-        <compression>
-            <type>gzip</type>
-        </compression>
     </value-serializer>
 </store>
