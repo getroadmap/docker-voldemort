@@ -1,11 +1,11 @@
 <cluster>
-        <name>test_report_cluster</name>
+        <name>chronos-voldemort</name>
         <server>
                 <id>0</id>
                 <host>localhost</host>
                 <http-port>5611</http-port>
                 <socket-port>6666</socket-port>
-                <partitions>0, 1</partitions>
+                <partitions>0</partitions>
         </server>
 </cluster>
 

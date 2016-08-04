@@ -8,10 +8,8 @@
     <required-writes>1</required-writes>
     <key-serializer>
         <type>string</type>
-        <schema-info>utf8</schema-info>
     </key-serializer>
     <value-serializer>
         <type>string</type>
-        <schema-info>utf8</schema-info>
     </value-serializer>
 </store>
