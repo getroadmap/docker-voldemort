@@ -4,9 +4,11 @@ Getting started
 Start a voldemort single instance server
 
     $ docker build -t voldemort .
-    $ docker run -d --name voldemort -t voldemort
+    $ docker run -d -p 127.0.0.1:6666:6666 --name voldemort -t voldemort
 
-Start another instance, that we can use as a client
+Connect to the container so we can test as a client
 
-    $ docker run -i --link=voldemort:voldemort -t voldemort \
-            ./bin/voldemort-shell.sh test tcp://voldemort:6666
+    $ docker exec -i -t ./bin/voldemort-shell.sh chronos tcp://localhost:6666
+or 
+
+    $ docker exec -i -t ./bin/bash
